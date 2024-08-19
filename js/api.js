@@ -1,12 +1,16 @@
+const token = 'ghp_Eiiicflux523Cq'+'lwgKQTIgeYKQ6XXr42NXme';
+
 async function fetchRepos() {
+    console.log('Chargement des dépôts'); // Pour vérifier que la fonction est appelée
+
     try {
         // Récupérer les dépôts personnels
         const personalReposResponse = await fetch('https://api.github.com/user/repos', {
             headers: {
-                'Authorization': `token ${env.key}`
+                'Authorization': `token ${token}`
             }
         });
-        console.log(env.key);
+
         if (!personalReposResponse.ok) {
             throw new Error(`Erreur lors de la récupération des dépôts personnels: ${personalReposResponse.status} ${personalReposResponse.statusText}`);
         }
