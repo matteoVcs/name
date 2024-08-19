@@ -5,7 +5,7 @@ async function fetchRepos() {
         // Récupérer les dépôts personnels
         const personalReposResponse = await fetch('https://api.github.com/user/repos', {
             headers: {
-                'Authorization': `token ${os.getenv.KEY}`
+                'Authorization': `token ${os.getenv("KEY")}`
             }
         });
 
