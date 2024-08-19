@@ -1,150 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portefollio Mattéo Vocanson</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Blog Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Mattéo Vocanson</h1>
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Portfolio Mattéo Vocanson</h1>
+        <p>Dans ce Portfolio, vous retrouverez mon cv, ainsi que les liens vers mes projets publique mais aussi une description de mes experiances professionnelles</p>
+    </header>
 
-  <main class="main">
-    <section id="accueil">
-      <h2>Bienvenue sur mon portefollio!</h2>
-      <p>Ici, tu peux en apprendre davantage sur mes compétences professionnelles avec les projets que j'ai réalisés.</p>
-    </section>
+    <div class="container">
 
-    <section id="competences">
-      <h2>Mes projets</h2>
-      <div class="allCards">
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/administrationPostClient.jpg" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Administration Poste Client</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/48h.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Challenge 48H</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/java.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Java</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/linux.png" class="cardImg"></img>
-          </div>
-            <div class="cardTitle">Linux</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/poo.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">POO</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/infra.jpg" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Infra et SI</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/hangman.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Hangman</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/hangman.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Hangman Web</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/groupie.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Groupie-Tracker</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/forum.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Forum</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/js.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Challenge JS</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/résaux.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Resaux</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/voltaire.png" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Voltaire</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/image2.jpg" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Yboost</div>
-          <div class="cardText"></div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <img src="img/image2.jpg" class="cardImg"></img>
-          </div>
-          <div class="cardTitle">Ymmersion</div>
-          <div class="cardText"></div>
-        </div>
-      </div>
-    </section>
+        <!-- Section de CV -->
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <p>Pour consulter mon CV détaillé, vous pouvez le télécharger en cliquant sur le lien ci-dessous :</p>
+            <a href="file/CV_matteo_vocanson.pdf" target="_blank" download="file/CV_matteo_vocanson.pdf" class="download-link">Télécharger le CV au format PDF</a>
+        </section>
 
-    <section id="contact">
-      <h2>Contacte-moi</h2>
-      <p>Tu peux me contacter à l'adresse matteo.vocanson@ynov.com</p>
-    </section>
-  </main>
+        <!-- Section des Repositories -->
+        <section id="repositories">
+            <h2>Projets GitHub</h2>
+            <p>Les projets ci-dessous sont récupérés automatiquement via l'API GitHub. Vous pouvez explorer les détails de chaque projet en cliquant sur les cartes.</p>
+            <ul id="repoList"></ul>
+        </section>
 
-  <footer>
-    <p>&copy; 2023 MattéoVcs. Tous droits réservés.</p>
-  </footer>
+        <!-- Section des Expériences Professionnelles -->
+        <section id="experience">
+            <h2>Expériences Professionnelles</h2>
+            <div class="experience-list">
+                <div class="experience-card">
+                    <h3>Nova-Groupe</h3>
+                    <p>Un stage de 6 semaines ou j'ai réalisé un scrapper en python avec sélénium et BeautifulSoup4, puis stocker les données récupérées dans une database postgreSQL, pour enfin développer un tableau en NextJS qui sert a relier les produits scrapper aux produits de la boites dans un tableau qui est de base vide et qui a pour objectif d'etre remplis avec les données des produits qui ont été scrap</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
-  <script src="script.js"></script>
+    <script src="js/api.js"></script>
 </body>
 </html>
+
+

@@ -1,0 +1,196 @@
+/* CSS général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+header {
+    background-color: #0366d6;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Section de Présentation */
+#presentation {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#presentation p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Section de CV */
+#cv {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cv p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #0366d6;
+    text-decoration: none;
+    border: 1px solid #0366d6;
+    border-radius: 4px;
+    padding: 10px 15px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-link:hover {
+    background-color: #0366d6;
+    color: #fff;
+}
+
+/* Section des Repositories */
+#repositories {
+    margin-bottom: 40px;
+}
+
+#repositories p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#repoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.repo-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(50% - 15px); /* 2:1 aspect ratio, adjusted for margin */
+    height: 200px; /* Height for 2:1 aspect ratio */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.repo-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.repo-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.repo-description {
+    font-size: 14px;
+    color: #586069;
+    margin-top: 10px;
+    overflow: hidden; /* Ensure description fits within the card */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    white-space: nowrap; /* Prevent line breaks in description */
+}
+
+.repo-card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Section des Expériences Professionnelles */
+#experience {
+    margin-bottom: 40px;
+}
+
+.experience-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.experience-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 15px); /* 2:1 aspect ratio, adjusted for margin */
+    height: 200px; /* Height for 2:1 aspect ratio */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.experience-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.experience-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.5;
+}
