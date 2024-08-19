@@ -1,5 +1,3 @@
-const token = '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';
-
 async function fetchRepos() {
     console.log('Chargement des dépôts'); // Pour vérifier que la fonction est appelée
 
@@ -7,7 +5,7 @@ async function fetchRepos() {
         // Récupérer les dépôts personnels
         const personalReposResponse = await fetch('https://api.github.com/user/repos', {
             headers: {
-                'Authorization': `token ${token}`
+                'Authorization': `token ${os.getenv.KEY}`
             }
         });
 
