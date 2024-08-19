@@ -8,7 +8,7 @@ async function fetchRepos() {
                 'Authorization': `token ${os.getenv("KEY")}`
             }
         });
-        print(os.getenv("KEY"))
+        console.log(os.getenv("KEY"))
         if (!personalReposResponse.ok) {
             throw new Error(`Erreur lors de la récupération des dépôts personnels: ${personalReposResponse.status} ${personalReposResponse.statusText}`);
         }
