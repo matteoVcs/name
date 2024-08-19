@@ -1,6 +1,4 @@
 async function fetchRepos() {
-    console.log('Chargement des dépôts'); // Pour vérifier que la fonction est appelée
-
     try {
         // Récupérer les dépôts personnels
         const personalReposResponse = await fetch('https://api.github.com/user/repos', {
@@ -8,7 +6,7 @@ async function fetchRepos() {
                 'Authorization': `token ${os.getenv("KEY")}`
             }
         });
-        console.log(os.getenv("KEY"))
+        console.log(env.key);
         if (!personalReposResponse.ok) {
             throw new Error(`Erreur lors de la récupération des dépôts personnels: ${personalReposResponse.status} ${personalReposResponse.statusText}`);
         }
