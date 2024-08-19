@@ -1,4 +1,4 @@
-const token = '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';
+const token = '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';
 
 async function fetchRepos() {
     console.log('Chargement des dépôts'); // Pour vérifier que la fonction est appelée
